@@ -4,7 +4,17 @@
       <li v-for="icon in iconsList" :key="icon.id">
         <div class="pic">
           <img id="borderimg2" v-bind:src="icon.imageURL" border="1" />
-          <div class="centered">{{ icon.name }}</div>
+          
+          <span  v-if= "icon.name == 'EAT'">
+          <a href= "EatPage.html" class="centered">{{ icon.name }}</a>
+          </span>
+          <span v-if= "icon.name == 'RELAX'" style="color:white; background-color:pink">
+          <a href= "RelaxPage.html" class="centered">{{ icon.name }}</a>
+          </span>
+          <span v-if= "icon.name == 'SIGHTSEE'" style="color:white; background-color:pink">
+          <a href= "SightSeePage.html" class="centered">{{ icon.name }}</a>
+          </span>
+        
         </div>
       </li>
     </ul>
@@ -55,6 +65,11 @@ li {
   height: 300px;
 }
 
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
 #footer {
   background-color: plum ;
   height: 50px;
@@ -63,4 +78,5 @@ li {
   padding-top: 10px;
   color:white;
 }
+
 </style>
