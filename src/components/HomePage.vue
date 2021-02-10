@@ -8,8 +8,8 @@
           <span  v-if= "icon.name == 'EAT'">
           <a href= "EatPage.html" class="centered">{{ icon.name }}</a>
           </span>
-          <span v-if= "icon.name == 'RELAX'" style="color:white; background-color:pink">
-          <a href= "RelaxPage.html" class="centered">{{ icon.name }}</a>
+          <span v-if= "icon.name == 'FUN'" style="color:white; background-color:pink">
+          <a href= "FunPage.html" class="centered">{{ icon.name }}</a>
           </span>
           <span v-if= "icon.name == 'SIGHTSEE'" style="color:white; background-color:pink">
           <a href= "SightSeePage.html" class="centered">{{ icon.name }}</a>

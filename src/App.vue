@@ -2,7 +2,7 @@
   <div id="app">
     <header>
       Let's Travel
-      <span id="taskbar">Home | Eat | Relax | SightSee | About </span>
+      <span id="taskbar">Home | Eat | Fun | SightSee | About </span>
     </header>
     <div class="container">
       <img id="borderimg" border=1>
@@ -28,16 +28,12 @@ export default {
           name: "EAT",
           imageURL:
             "https://www.ephotozine.com/articles/6-awesome-travel-food-photography-tips-for-that-perfect-instagram-shot-16756/images/xlg_64361570_10157067569056047_5751272624537731072_n.jpg",
-          page: 
-            "SightSee.html",
         },
         {
           id: "#025",
-          name: "RELAX",
+          name: "FUN",
           imageURL:
             "https://i.pinimg.com/736x/cb/ea/08/cbea0801c97d18fcb596d7b1dc289b5a.jpg",
-          page: 
-            "SightSee.html",
         },
         {
           id: "#067",
@@ -85,6 +81,7 @@ header {
   font-family: monospace;
   font-weight: bold;
   color: white;
+  text-shadow: 4px 4px darkmagenta;
 }
 
 .centered {
@@ -102,11 +99,14 @@ header {
   font-weight: bolder;
   color: white;
   font-family:monospace;
+  text-shadow: 4px 4px darkmagenta;
 
 }
 
 #taskbar {
-  margin-left: 30%;
+  margin-left: 50%;
+  font-size: 25px;
 }
+
 
 </style>
